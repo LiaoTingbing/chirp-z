@@ -17,6 +17,6 @@ cx_vec czt(const cx_vec& x, const uword M, const cx_double W, const cx_double A)
 ```
 ### 返回值
 
-\[ X(k) = \sum_{n = 0}^{N - 1} x(n) A^{-n} W^{nk}    ,k=0,1,\cdot \cdot \cdot,M-1  \] 
+$$ X(k) = \sum_{n = 0}^{N - 1} x(n) A^{-n} W^{nk}    ,k=0,1,\cdot \cdot \cdot,M-1  $$ 
 
 
