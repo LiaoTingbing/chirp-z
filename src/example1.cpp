@@ -1,7 +1,7 @@
 ﻿
  
 
-#include "include/czt.h"
+#include "../include/czt.h"
 
 const double PI = 3.1415926; 
 int main()

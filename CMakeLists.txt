@@ -8,7 +8,7 @@ project("chirp-z")
 
 add_executable(
     ${PROJECT_NAME}
-    chirpz.cpp
+    "src/example1.cpp"
     include/czt.h
     src/czt.cpp
 )
