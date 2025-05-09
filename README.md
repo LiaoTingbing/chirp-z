@@ -1,4 +1,4 @@
-
+﻿
 # Chirp Z 变换
 
 由于Armadillo没有czt变换函数，就用armadillo写了个czt变换的函数。
@@ -10,10 +10,10 @@
 
 ## 函数原型 
 ```
-cx_vec czt(const vec& x, const uword M, const cx_double W, const cx_double A);
 
+template<class T>
+auto czt( T& x, const uword M, const cx_double W, const cx_double A);
 
-cx_vec czt(const cx_vec& x, const uword M, const cx_double W, const cx_double A);
 ```
 ### 返回值
 

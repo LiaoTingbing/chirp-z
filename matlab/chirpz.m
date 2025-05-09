@@ -16,11 +16,14 @@ Ts = 1/fs;
 ts = (1:N)*Ts;
 x = exp(1i * 2*pi*f1*ts) + cos(2*pi*f2*ts) ; 
 % y_DFT = abs(fft(x)); %%DFT
-m = 10000000;
+
+m = 20000000;
 w = exp(-1i*2*pi*(150-50)/(m*fs));
 a = exp(1i*2*pi*50/fs);
 
-y_CZT = abs(czt(x,m,w,a))';%%CZT
+tic
+y_CZT = abs(czt(x,m,w,a));%%CZT
+toc
 
 % fn = (0:N-1)/N;
 % fy = fs*fn;
